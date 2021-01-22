@@ -2,25 +2,25 @@
 body {
   min-width:320px;
   max-width: 800px;
-  margin-left: 300px !important;
+  margin-left: 5px !important;
 }
 /* TYPOGRAPHY */
 h1{
-  font-size: 30px;
+  font-size: 50px;
   padding: 0px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h2{
-  font-size: 20px;
+  font-size: 30px;
   padding: 0px;
-  font-family: cursive;
-  color:rgba(199, 53, 8, 0.884);
+  font-family: blippo, fantasy;
+  color:rgba(220, 89, 81, 0.975);
 }
 h3{
   font-size: 20px;
   padding: 2px;
-  font-family: cursive;
-  color:rgba(199, 53, 8, 0.884);
+  font-family: blippo, fantasy;
+  color:rgba(220, 89, 81, 0.975);
 }
 h4{
   font-size: 18px;
@@ -32,9 +32,9 @@ h4{
 h5{
   font-size: 25px;
   padding: 10px;
-  font-family: cursive; 
-  color:rgba(199, 53, 8, 0.884);
-  text-align:center;
+  font-family: blippo, fantasy;
+  color:rgba(220, 89, 81, 0.975);
+  margin-left: 400px;
 }
 
 p {
@@ -45,8 +45,8 @@ p {
 
 /* MAIN NAV SECTION */
 nav {
-  width: 90%;
-  padding: 1%;
+  width: 100%;
+  padding: 0px;
 }
 .inline-block{
   display: inline-block;
@@ -57,21 +57,10 @@ nav {
   padding: 1%;
   text-align: center;
 }
-ul{
-  width: 70%;
-  margin-left:10px;
-}
-
-li{
-  padding: 15px;
-  font-size: 20px;
-  font-family: fantasy;
-}
-
 .block_element{
   font-size: 15px;
   padding: 30px;
-  font-family:'Architects Daughter', cursive;
+  font-family: blippo, fantasy;
   color:black; 
 }
 
@@ -85,14 +74,13 @@ li{
 .content{
   width: 800px;
   margin-left: 100px;
-  padding: 5px;
-  
+  padding: 5px;  
 }
 
 /* BUTTONS */
 button{
     color:rgb(32, 32, 32);
-    padding: 10px;
+    padding: 5px;
     margin: 0 auto;
     display:block;
 }
@@ -100,18 +88,20 @@ button{
 
 
 /* My UX Skills section coded using CSS flex */
+.mySkills {
+  margin-left: 60px;
+}
 .flexContainer{
-  /*width: 550px;*/
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
   padding: 15px;
-  /* margin-left: 80px; */
+  margin-left: 80px;
  }
 
 .child{
-  /* width: 200px; */
-  /* height: 225px; */
+  width: 200px; 
+  height: 225px; 
   padding: 12px;
   margin: 10px 5px;
   background-color: rgba(248, 247, 247, 0.726);
@@ -120,11 +110,13 @@ button{
  @media screen and (max-width: 414px) {
   .flexContainer {
     flex-direction: column;
-    background-color: blueviolet; 
   }     
 }
 
 /* My Work Section Constructed using CSS Grid */
+.myWork {
+  margin-left: 60px;
+}
 #workGrid{
   display: grid;
   justify-items: center;
@@ -159,7 +151,6 @@ button{
       "bottomLeftImage"
       "bottomRightimage"
     ;
-    background-color: blueviolet;
     padding:0;
   }
 
@@ -168,11 +159,20 @@ button{
 /* FOOTER SECTION */
 footer{
   background-color: #2F5259;
-  text-align: center;
   color:beige;
-  width: 100%;
+  width: 1600px;
+}
+li{
+  padding: 20px;
+  font-size: 20px;
+  font-family: blippo, fantasy;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  width: 100px;
 }
 
 footer > ul {
-  display: inline-table;
+  display: inline-flex;
 } 
