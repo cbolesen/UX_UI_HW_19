@@ -2,7 +2,7 @@
 body {
   min-width:320px;
   max-width: 800px;
-  margin:0 auto;
+  margin-left: 300px !important;
 }
 /* TYPOGRAPHY */
 h1{
@@ -45,9 +45,8 @@ p {
 
 /* MAIN NAV SECTION */
 nav {
-  width: 100%;
+  width: 90%;
   padding: 1%;
-  vertical-align: 0px;
 }
 .inline-block{
   display: inline-block;
@@ -77,14 +76,17 @@ li{
 }
 
 /* HERO CONTENT SECTION */
-.heroImg{
-  /* height: 600px; */
-  padding: 25px;
+.heroImg {
+  height: 600px;
+  padding: 50px;
+  width: 1000px;
 }
+
 .content{
-  /* width: 800px; */
-  margin: 0 auto;
+  width: 800px;
+  margin-left: 100px;
   padding: 5px;
+  
 }
 
 /* BUTTONS */
@@ -132,6 +134,7 @@ button{
   "topLeftImage" "topRightImage"
   "bottomLeftImage" "bottomRightimage";
   padding:10px;
+  margin-left: 120px;
 }
 .topLeftImage {
   grid-area: auto;
@@ -167,7 +170,6 @@ footer{
   background-color: #2F5259;
   text-align: center;
   color:beige;
-  margin: 25px auto;
   width: 100%;
 }
 

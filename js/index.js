@@ -1,7 +1,9 @@
 console.log("Your index.js file is loaded correctly!");
-$("#workGrid").hover(function()) {
-    fade??
-},
-function() {
-
-});    
+$(document).ready(function(){
+    $("#workGrid").hover(function(){
+        alert("Welcome to my work!");
+    },
+    function(){
+      alert("Godbye! Thank you for visiting me!");
+    }); 
+  });
